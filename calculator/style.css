@@ -1,0 +1,120 @@
+* {
+    box-sizing: border-box;
+    outline: 0;
+    transition: all 0.2s ease-in;
+}
+
+body {
+    font-family: times new roman, Haettenschweiler, ' Bold', sans-serif;
+    font-weight:bold;
+}
+
+a {
+    text-decoration: none;
+    color: #340808;
+}
+
+body {
+  background: linear-gradient(to right,  rgb(73, 80, 83), rgb(169, 163, 228) ,  rgb(74, 141, 180));
+}
+
+.container {
+    height: 100vh;
+    width: 100vw;
+    display: grid;
+    place-items: center;
+
+}
+
+.calculator {
+    position: absolute;
+    height: 200;
+    width: 100;
+    padding: 25px;
+    border: 5px solid yellow;
+    border-radius: 10%;
+}
+
+#display {
+    margin: 0 5px;
+    height: 150px;
+    width: auto;
+    max-width: 290px;
+    display: flex;
+    align-items: flex-end;
+    justify-content:flex-end;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    color: black;
+    padding-right: 5%;
+    overflow-x: scroll;
+    background-color: rgba(255, 255, 255, 0.785);
+    border-radius: 15px;
+    border: 5px solid rgb(14, 138, 29);
+  }
+
+#display::-webkit-scrollbar {
+    display: block;
+    height: 3px;
+}
+
+button {
+    height: 60px;
+    width: 60px;
+    border-radius: 30px;
+    margin: 5px;
+    font-size: 30px;
+    cursor: default;
+    transition: all 200ms ease-out;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+button#equal {
+    height: 120px;
+    width:60px;
+    color:black;
+    background-color: rgb(209, 79, 32);
+}
+  .calculator {
+    background: repeating-linear-gradient(to left,  rgb(4, 21, 48), rgb(54, 28, 28) ,  rgb(87, 88, 131));
+  }
+
+  .calculator #display {
+    color: black; 
+  }
+
+  .calculator button#clear {
+    background-color: rgb(15, 255, 60);
+    color: rgb(0,0,0);
+    font-weight:600;
+    font-size: 31px;
+  }
+
+  .calculator button.btn-number {
+    background-color: black;
+    color: white;
+    font-weight: bolder;
+    border-radius: 10%;
+    border: 3px solid rgb(218, 211, 8);
+  }
+
+  .calculator button.btn-operator {
+    background-color: #a5abf8;
+    color:black;
+    font-size: 30px;
+    border: 1px solid rgb(184, 184, 125);
+  }
+  
+  .calculator  button.btn-equal {
+    background-color: white;
+    color: rgb(12, 6, 6);
+    font-weight: bold;
+    font-size:35px;
+  }
+  .text-center{
+      text-align: center;
+  }
